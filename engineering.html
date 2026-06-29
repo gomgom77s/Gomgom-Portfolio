@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Projects — Gomgom Sianturi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">GS<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="engineering.html" class="active-link">Engineering</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="engineering.html" onclick="closeMobile()">Engineering</a>
+      <a href="analytics.html" onclick="closeMobile()">Analytics</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-hero alt-bg">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <p class="section-eyebrow">All Engineering Projects</p>
+      <h1 class="page-hero-title">Design &<br><em>Engineering</em></h1>
+      <p class="page-hero-sub">
+        <!-- ✏️ Edit kalimat pengantar halaman ini -->
+        Dies, tooling, and manufacturing — every project built to tolerance.
+      </p>
+    </div>
+  </div>
+
+  <section class="all-projects-section">
+    <div class="container">
+      <div class="projects-row">
+
+        <!-- ✏️ PROJECT 1 — Edit sesuai project asli -->
+        <article class="pcard">
+          <div class="pcard-img ph-eng">
+            <!-- 🖼️ Ganti dengan: <img src="assets/eng1.jpg" alt="Extrusion Die"> -->
+            <span>🖼️ Foto / CAD render project ini</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag eng-tag">Dies Design</span><span class="tag eng-tag">Extrusion</span></div>
+            <h3>Aluminium Extrusion Die Design</h3>
+            <p>Designed dies for aluminium profile extrusion at Mega Persada Group. Optimised die land geometry to ensure consistent cross-section and surface finish across high-volume production runs.</p>
+            <div class="pcard-tools"><span>CATIA</span><span>Inventor</span><span>AutoCAD</span></div>
+            <button class="pcard-cta eng-cta" onclick="openModal('eng1')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT 2 -->
+        <article class="pcard">
+          <div class="pcard-img ph-eng">
+            <span>🖼️ Foto / gambar technical drawing</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag eng-tag">Tool Design</span></div>
+            <h3>Custom Maintenance Tool Design</h3>
+            <p>Designed specialised tools for maintenance of automotive stamping dies. Validated structurally with ANSYS simulation before workshop fabrication and deployment.</p>
+            <div class="pcard-tools"><span>SolidWorks</span><span>ANSYS</span><span>AutoCAD</span></div>
+            <button class="pcard-cta eng-cta" onclick="openModal('eng2')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT 3 -->
+        <article class="pcard">
+          <div class="pcard-img ph-eng">
+            <span>🖼️ Foto dies / stamping press</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag eng-tag">Stamping</span><span class="tag eng-tag">Maintenance</span></div>
+            <h3>Progressive Die Maintenance & Redesign</h3>
+            <p>Diagnosed wear patterns and proposed targeted design improvements to extend die lifespan in high-volume automotive stamping production.</p>
+            <div class="pcard-tools"><span>CATIA</span><span>Technical Drawing</span></div>
+            <button class="pcard-cta eng-cta" onclick="openModal('eng3')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT 4 — Tambah project baru di sini -->
+        <article class="pcard">
+          <div class="pcard-img ph-eng">
+            <span>🖼️ Foto / render project ke-4</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag eng-tag">✏️ Kategori</span></div>
+            <!-- ✏️ Ganti judul, deskripsi, tools, dan modal ID -->
+            <h3>✏️ Nama Project ke-4</h3>
+            <p>✏️ Tulis deskripsi singkat project ini — apa yang dikerjakan, tantangannya, dan hasilnya.</p>
+            <div class="pcard-tools"><span>✏️ Tool</span><span>✏️ Tool</span></div>
+            <button class="pcard-cta eng-cta" onclick="openModal('eng4')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT 5 -->
+        <article class="pcard">
+          <div class="pcard-img ph-eng">
+            <span>🖼️ Foto / render project ke-5</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag eng-tag">✏️ Kategori</span></div>
+            <h3>✏️ Nama Project ke-5</h3>
+            <p>✏️ Tulis deskripsi singkat project ini.</p>
+            <div class="pcard-tools"><span>✏️ Tool</span><span>✏️ Tool</span></div>
+            <button class="pcard-cta eng-cta" onclick="openModal('eng5')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ Tambah terus sesuai kebutuhan dengan format yang sama -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">GS<span class="dot">.</span></span>
+      <span class="mono footer-copy">© 2025 Gomgom Sianturi</span>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

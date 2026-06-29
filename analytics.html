@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analytics Projects — Gomgom Sianturi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">GS<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="analytics.html" class="active-link">Analytics</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="engineering.html" onclick="closeMobile()">Engineering</a>
+      <a href="analytics.html" onclick="closeMobile()">Analytics</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-hero alt-bg data-page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <p class="section-eyebrow">All Data Analytics Projects</p>
+      <h1 class="page-hero-title">Data &<br><em class="data-em">Analytics</em></h1>
+      <p class="page-hero-sub">
+        <!-- ✏️ Edit kalimat pengantar halaman analytics -->
+        From raw query to actionable insight — structured thinking with data.
+      </p>
+    </div>
+  </div>
+
+  <section class="all-projects-section">
+    <div class="container">
+      <div class="projects-row">
+
+        <!-- ✏️ PROJECT DATA 1 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <!-- 🖼️ Ganti dengan: <img src="assets/data1.jpg" alt="Dashboard"> -->
+            <span>🖼️ Screenshot dashboard Power BI</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">SQL</span><span class="tag data-tag">Power BI</span></div>
+            <h3>Sales Performance Dashboard</h3>
+            <p>End-to-end pipeline: SQL extraction → Python cleaning → Power BI visualisation. Enabled management to identify top-performing SKUs and underperforming regions in one view.</p>
+            <div class="pcard-tools"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data1')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 2 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span>🖼️ Screenshot chart / analisis</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Python</span><span class="tag data-tag">Pandas</span></div>
+            <h3>Customer Behaviour Analysis</h3>
+            <p>RFM segmentation and 6-month cohort retention analysis. Top 20% of customers drove 68% of revenue — findings used to brief re-engagement campaigns.</p>
+            <div class="pcard-tools"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data2')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 3 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span>🖼️ Screenshot laporan / visualisasi</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">SQL</span><span class="tag data-tag">Attribution</span></div>
+            <h3>Marketing Campaign Performance</h3>
+            <p>Multi-touch attribution across email, social, and paid search. Discovered email CPA was 3× lower than paid search — led to Q4 budget reallocation recommendation.</p>
+            <div class="pcard-tools"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data3')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 4 — Tambah project baru -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span>🖼️ Screenshot project ke-4</span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">✏️ Tool</span></div>
+            <h3>✏️ Nama Project Data ke-4</h3>
+            <p>✏️ Deskripsi singkat: apa datanya, metode analisisnya, dan apa insight yang dihasilkan.</p>
+            <div class="pcard-tools"><span>✏️ Tool</span><span>✏️ Tool</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data4')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ Tambah terus -->
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">GS<span class="dot">.</span></span>
+      <span class="mono footer-copy">© 2025 Gomgom Sianturi</span>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
