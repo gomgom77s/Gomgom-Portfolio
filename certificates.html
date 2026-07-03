@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications — Gomgom Sianturi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">GS<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="certificates.html" class="active-link">Certificates</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="engineering.html" onclick="closeMobile()">Engineering</a>
+      <a href="analytics.html" onclick="closeMobile()">Analytics</a>
+      <a href="certificates.html" onclick="closeMobile()">Certificates</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-hero alt-bg">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <p class="section-eyebrow">All Certifications</p>
+      <h1 class="page-hero-title">Credentials &<br><em>Continuous learning</em></h1>
+      <p class="page-hero-sub">
+        <!-- ✏️ Edit kalimat pengantar halaman ini -->
+        Formal training across engineering and data — completed, in progress, and planned.
+      </p>
+    </div>
+  </div>
+
+  <section class="all-certs-section">
+    <div class="container">
+
+      <div class="project-tabs cert-tabs">
+        <button class="ptab active" id="ctabEng" onclick="switchCertTab('eng')">⚙ Engineering</button>
+        <button class="ptab" id="ctabData" onclick="switchCertTab('data')">◈ Data Analytics</button>
+      </div>
+
+      <!-- Engineering Certs (full list) -->
+      <div class="cert-panel" id="certPanelEng">
+        <div class="certs-full-row">
+
+          <!-- ✏️ Cert Engineering 1 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">CAD</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 1</h3>
+              <p>✏️ Deskripsi singkat sertifikat ini.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Cert Engineering 2 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 2</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Cert Engineering 3 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 3</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Tambah cert Engineering 4 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 4</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Tambah terus dengan format yang sama -->
+
+        </div>
+      </div>
+
+      <!-- Data Analytics Certs (full list) -->
+      <div class="cert-panel hidden" id="certPanelData">
+        <div class="certs-full-row">
+
+          <div class="cert-card in-prog">
+            <div class="cert-left">
+              <div class="cert-logo revou-logo">RevoU</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status">In Progress · 2025</span>
+              <h3>Full Stack Data Analytics</h3>
+              <p>SQL, Python, Power BI, data storytelling, and real-world analytics projects.</p>
+            </div>
+          </div>
+
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo google-logo">G</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>Google Data Analytics</h3>
+              <p>Professional Certificate via Coursera.</p>
+            </div>
+          </div>
+
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo sql-logo">SQL</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>SQL Certification</h3>
+              <p>Advanced SQL for data analysis.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Tambah cert Data Analytics ke-4 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo sql-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Data ke-4</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Tambah terus dengan format yang sama -->
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">GS<span class="dot">.</span></span>
+      <span class="mono footer-copy">© 2025 Gomgom Sianturi</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

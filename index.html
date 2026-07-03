@@ -6,7 +6,7 @@
   <title>Gomgom Sianturi — Design Engineer & Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,6 +19,7 @@
       <a href="#whatido">Expertise</a>
       <a href="#projects">Work</a>
       <a href="#experience">Experience</a>
+      <a href="#certifications">Certificates</a>
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-right">
@@ -35,6 +36,7 @@
       <a href="#whatido" onclick="closeMobile()">Expertise</a>
       <a href="#projects" onclick="closeMobile()">Work</a>
       <a href="#experience" onclick="closeMobile()">Experience</a>
+      <a href="#certifications" onclick="closeMobile()">Certificates</a>
       <a href="#contact" onclick="closeMobile()">Contact</a>
     </div>
   </nav>
@@ -45,7 +47,7 @@
 
       <!-- 📸 FOTO: Ganti div ini dengan tag <img src="assets/foto.jpg" alt="Gomgom Sianturi" class="hero-photo" /> -->
       <div class="hero-photo photo-placeholder">
-        <span class="placeholder-label">📸 Upload foto kamu di sini<br><small>Ganti div ini dengan &lt;img src="assets/foto.jpg"&gt;</small></span>
+        <img src="images/Foto-diri.jpg" alt="">
       </div>
 
     </div>
@@ -57,14 +59,14 @@
       </h1>
       <p class="hero-tagline">
         <!-- ✏️ TAGLINE: Edit kalimat ini sesuai kepribadian kamu -->
-        I build things with metal and make sense of things with data.
+        Combining engineering precision with analytical thinking.
       </p>
 
       <div class="hero-switch">
-        <button class="switch-pill active" id="heroEngBtn" onclick="heroSwitch('eng')">
+        <button class="switch-pill" id="heroEngBtn" onclick="heroSwitch('eng')">
           ⚙ Engineering Portfolio
         </button>
-        <button class="switch-pill" id="heroDataBtn" onclick="heroSwitch('data')">
+        <button class="switch-pill active-data" id="heroDataBtn" onclick="heroSwitch('data')">
           ◈ Data Analytics
         </button>
       </div>
@@ -103,7 +105,7 @@
       <div class="kpi-divider"></div>
 
       <div class="kpi-item">
-        <span class="kpi-num" data-target="2" data-prefix="" data-suffix="+">2+</span>
+        <span class="kpi-num" data-target="3" data-prefix="" data-suffix="+">3+</span>
         <span class="kpi-label">Years in Manufacturing</span>
         <span class="kpi-sub">Dies design &amp; production support</span>
       </div>
@@ -111,9 +113,9 @@
       <div class="kpi-divider"></div>
 
       <div class="kpi-item">
-        <span class="kpi-num" data-target="3" data-prefix="" data-suffix="">3</span>
+        <span class="kpi-num" data-target="3" data-prefix="" data-suffix="+">3+</span>
         <span class="kpi-label">CAD Platforms</span>
-        <span class="kpi-sub">CATIA · Inventor · AutoCAD</span>
+        <span class="kpi-sub">SolidWorks · Inventor · AutoCAD</span>
       </div>
 
     </div>
@@ -129,15 +131,15 @@
         </div>
         <div class="about-quick">
           <!-- ✏️ Edit detail pribadi di sini -->
-          <div class="quick-row"><span>Location</span><b>Indonesia</b></div>
-          <div class="quick-row"><span>Experience</span><b>2+ Years</b></div>
+          <div class="quick-row"><span>Location</span><b>Bogor</b></div>
+          <div class="quick-row"><span>Experience</span><b>3+ Years</b></div>
           <div class="quick-row"><span>Industry</span><b>Manufacturing</b></div>
           <div class="quick-row"><span>Status</span><b class="open-badge">Open to Work ✦</b></div>
         </div>
       </div>
       <div class="about-text-col">
         <p class="section-eyebrow">About Me</p>
-        <h2 class="section-title">From the shop floor<br>to the spreadsheet.</h2>
+        <h2 class="section-title">Engineering Experience. <br>Analytical Thinking.</h2>
         <!-- ✏️ BIO: Edit paragraf ini sesuai cerita kamu -->
         <p class="body-text">
           Mechanical Engineering graduate with hands-on experience in <strong>dies design</strong>, tooling development, and manufacturing processes. I know what it looks like when a production line breaks down — and I know how to read the data to prevent it.
@@ -165,12 +167,12 @@
           <h3>Design Engineering</h3>
           <ul>
             <!-- ✏️ Edit skill list sesuai pengalaman aktual kamu -->
-            <li>Dies Design & Development</li>
-            <li>Tool Design</li>
-            <li>CAD Modeling (CATIA, Inventor, AutoCAD)</li>
-            <li>Technical Drawing & GD&T</li>
-            <li>Product Development</li>
-            <li>ANSYS Simulation</li>
+            <li> Aluminium Extrusion Die Design</li>
+            <li>Tool & Fixture Design</li>
+            <li>CAD Modeling (SolidWorks, Inventor, AutoCAD)</li>
+            <li>Technical Drawing & Manufacturing Documentation</li>
+            <li> Design Modification & Continuous Improvement</li>
+            <li>Engineering Problem Solving</li>
           </ul>
         </div>
 
@@ -178,12 +180,12 @@
           <div class="exp-icon mfg-icon">🏭</div>
           <h3>Manufacturing</h3>
           <ul>
-            <li>CNC Machining</li>
-            <li>EDM & Wirecut</li>
-            <li>Workshop Process</li>
-            <li>Production Support</li>
-            <li>Continuous Improvement</li>
-            <li>Quality Analysis</li>
+            <li> Aluminium Extrusion Process</li>
+            <li>CNC Milling, EDM & Wirecut</li>
+            <li>Die Maintenance & Modification</li>
+            <li>Tool Assembly & Trial Support</li>
+            <li>Production Troubleshooting</li>
+            <li>Manufacturing Process Improvement</li>
           </ul>
         </div>
 
@@ -191,12 +193,12 @@
           <div class="exp-icon data-icon">◈</div>
           <h3>Data Analytics</h3>
           <ul>
-            <li>SQL (querying & analysis)</li>
-            <li>Python & Pandas</li>
-            <li>Power BI Dashboards</li>
-            <li>Data Cleaning & Wrangling</li>
-            <li>Statistical Reporting</li>
-            <li>Business Intelligence</li>
+            <li>SQL Data Querying</li>
+            <li>Data Cleaning & Preparation</li>
+            <li>Dashboard Development (Power BI)</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Business Insights & KPI Reporting</li>
+            <li>Data Visualization</li>
           </ul>
         </div>
 
@@ -211,12 +213,12 @@
       <h2 class="section-title">Selected projects.</h2>
 
       <div class="project-tabs">
-        <button class="ptab active" id="ptabEng" onclick="switchTab('eng')">⚙ Engineering</button>
-        <button class="ptab" id="ptabData" onclick="switchTab('data')">◈ Data Analytics</button>
+        <button class="ptab" id="ptabEng" onclick="switchTab('eng')">⚙ Engineering</button>
+        <button class="ptab active-data" id="ptabData" onclick="switchTab('data')">◈ Data Analytics</button>
       </div>
 
       <!-- ENGINEERING TOP 3 -->
-      <div class="project-panel" id="panelEng">
+      <div class="project-panel hidden" id="panelEng">
         <div class="projects-row">
 
           <article class="pcard">
@@ -273,19 +275,19 @@
       </div>
 
       <!-- DATA ANALYTICS TOP 3 -->
-      <div class="project-panel hidden" id="panelData">
+      <div class="project-panel" id="panelData">
         <div class="projects-row">
 
           <article class="pcard">
             <div class="pcard-img ph-data">
-              <span>🖼️ Screenshot dashboard Power BI</span>
+              <span><img src="images/portfolio-analytics-1.JPG" alt=""></span>
             </div>
             <div class="pcard-body">
-              <div class="pcard-tags"><span class="tag data-tag">SQL · Power BI</span></div>
-              <h3>Sales Performance Dashboard</h3>
-              <p>End-to-end sales analytics: SQL extraction, Python cleaning, Power BI visualisation. Enabled management to spot top SKUs and regional gaps.</p>
+              <div class="pcard-tags"><span class="tag data-tag">Excel · Tableau</span></div>
+              <h3>Delivery Performance Analysis and Improvement Opportunities</h3>
+              <p>Analyze delivery performance to identify the key drivers of late deliveries and evaluate improvement opportunities through data-driven simulation.</p>
               <div class="pcard-tools">
-                <span>SQL</span><span>Python</span><span>Power BI</span>
+                <span>Excel</span><span>Tableau</span>
               </div>
               <button class="pcard-cta data-cta" onclick="openModal('data1')">Case Study →</button>
             </div>
@@ -293,14 +295,14 @@
 
           <article class="pcard">
             <div class="pcard-img ph-data">
-              <span>🖼️ Screenshot chart / analisis</span>
+              <span><img src="images/portfolio-analytics-2.JPG" alt=""></span>
             </div>
             <div class="pcard-body">
               <div class="pcard-tags"><span class="tag data-tag">Python · Pandas</span></div>
-              <h3>Customer Behaviour Analysis</h3>
-              <p>RFM segmentation and cohort retention analysis on transaction history. Identified high-value customers and churn risk segments.</p>
+              <h3>Customer Segmentation & Revenue Growth Strategy Using RFM Analysis</h3>
+              <p>Segment customers based on transaction behaviour to identify opportunities for increasing revenue and customer engagement.</p>
               <div class="pcard-tools">
-                <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+                <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Numpy</span><span>Spreadsheet</span>
               </div>
               <button class="pcard-cta data-cta" onclick="openModal('data2')">Case Study →</button>
             </div>
@@ -308,14 +310,14 @@
 
           <article class="pcard">
             <div class="pcard-img ph-data">
-              <span>🖼️ Screenshot laporan / visualisasi</span>
+              <span><img src="images/portfolio-analytics-3.JPG" alt=""></span>
             </div>
             <div class="pcard-body">
-              <div class="pcard-tags"><span class="tag data-tag">SQL · Python</span></div>
-              <h3>Marketing Campaign Performance</h3>
-              <p>Multi-touch attribution analysis across channels. Found email CPA was 3× lower than paid search despite receiving 15% of budget.</p>
+              <div class="pcard-tags"><span class="tag data-tag">SQL · Spreadsheet</span></div>
+              <h3>Sales Performance Analysis Using SQL</h3>
+              <p>Analyzed customer purchasing behaviour, identify high-value customers, evaluate repeat purchase patterns, and determine which product categories contribute the most to overall revenue.</p>
               <div class="pcard-tools">
-                <span>SQL</span><span>Python</span><span>Power BI</span>
+                <span>SQL</span><span>Spreadsheet</span><span>Power BI</span>
               </div>
               <button class="pcard-cta data-cta" onclick="openModal('data3')">Case Study →</button>
             </div>
@@ -341,7 +343,7 @@
           <div class="tl-dot eng-dot"></div>
           <div class="tl-meta">
             <!-- ✏️ Edit tanggal kerja -->
-            <span class="tl-year mono">2025 — Present</span>
+            <span class="tl-year mono">Sep 2025 — Present</span>
             <span class="tl-badge eng-badge">Current</span>
           </div>
           <div class="tl-card">
@@ -350,10 +352,10 @@
             <h4>Mega Persada Group</h4>
             <ul>
               <!-- ✏️ Edit bullet point pekerjaan -->
-              <li>Design & development of aluminium extrusion dies</li>
-              <li>Tooling design for production and maintenance</li>
-              <li>Technical drawing, BOM, and specification docs</li>
-              <li>Cross-functional coordination with workshop team</li>
+              <li>Designed 15+ extrusion die and tooling solutions to support aluminum extrusion manufacturing operations</li>
+              <li>Supported the development of 12–15 dies per month while working with a limited production team</li>
+              <li>Collaborated with production and maintenance teams to improve operational performance</li>
+              <li>Prepared technical reports and engineering documentation to support decision-making</li>
             </ul>
           </div>
         </div>
@@ -361,17 +363,17 @@
         <div class="tl-item">
           <div class="tl-dot eng-dot"></div>
           <div class="tl-meta">
-            <span class="tl-year mono">2024 — 2025</span>
+            <span class="tl-year mono">Mei 2024 — Sep 2025</span>
           </div>
           <div class="tl-card">
             <h3>Design Engineer</h3>
             <!-- ✏️ Ganti nama perusahaan jika boleh disebutkan -->
             <h4>Automotive Stamping Industry</h4>
             <ul>
-              <li>Dies maintenance & redesign for high-volume stamping</li>
-              <li>Production support & quality defect analysis</li>
-              <li>CNC, EDM, and wirecut workshop coordination</li>
-              <li>Continuous improvement on tooling lifecycle</li>
+              <li>Designed and optimized 10+ stamping dies to support automotive manufacturing requirements</li>
+              <li>Analyzed production and tooling performance to identify improvement opportunities and support process optimization initiatives</li>
+              <li>Evaluated die performance and implemented design improvements to support continuous improvement initiatives</li>
+              <li>Reduced material waste through tooling and process optimization while maintaining production requirements</li>
             </ul>
           </div>
         </div>
@@ -379,16 +381,17 @@
         <div class="tl-item">
           <div class="tl-dot data-dot"></div>
           <div class="tl-meta">
-            <span class="tl-year mono">2025 — Ongoing</span>
+            <span class="tl-year mono">Feb 2026 — Ongoing</span>
             <span class="tl-badge data-badge">Learning</span>
           </div>
           <div class="tl-card">
             <h3>Full Stack Data Analytics</h3>
             <h4>RevoU Program</h4>
             <ul>
-              <li>SQL, Python (Pandas, NumPy), Power BI</li>
-              <li>Real-world projects in marketing & sales analytics</li>
-              <li>Data storytelling and business reporting</li>
+              <li>Completed hands-on projects using SQL, Python (Pandas), Excel, and Power BI for end-to-end data analysis</li>
+              <li>Performed data cleaning, exploratory data analysis (EDA), and data visualization to identify trends and business insights</li>
+              <li>Developed interactive dashboards and KPI reports to support data-driven decision making</li>
+              <li>Applied business understanding, statistical analysis, and data storytelling through real-world case studies</li>
             </ul>
           </div>
         </div>
@@ -402,92 +405,134 @@
     <div class="container">
       <p class="section-eyebrow">Certifications</p>
       <h2 class="section-title">Credentials.</h2>
-      <div class="certs-row">
 
-        <div class="cert-card in-prog">
-          <div class="cert-left">
-            <!-- ✏️ Ganti logo RevoU dengan gambar jika punya: <img src="assets/revou-logo.png"> -->
-            <div class="cert-logo revou-logo">RevoU</div>
-          </div>
-          <div class="cert-right">
-            <span class="cert-status">In Progress · 2025</span>
-            <h3>Full Stack Data Analytics</h3>
-            <p>SQL, Python, Power BI, data storytelling, and real-world analytics projects.</p>
-          </div>
-        </div>
-
-        <!-- ✏️ Tambah sertifikat baru di sini dengan format yang sama -->
-        <div class="cert-card upcoming">
-          <div class="cert-left">
-            <div class="cert-logo google-logo">G</div>
-          </div>
-          <div class="cert-right">
-            <span class="cert-status planned">Planned · 2025</span>
-            <h3>Google Data Analytics</h3>
-            <p>Professional Certificate via Coursera.</p>
-          </div>
-        </div>
-
-        <div class="cert-card upcoming">
-          <div class="cert-left">
-            <div class="cert-logo sql-logo">SQL</div>
-          </div>
-          <div class="cert-right">
-            <span class="cert-status planned">Planned · 2025</span>
-            <h3>SQL Certification</h3>
-            <p>Advanced SQL for data analysis.</p>
-          </div>
-        </div>
-
+      <div class="project-tabs cert-tabs">
+        <button class="ptab active" id="ctabEng" onclick="switchCertTab('eng')">⚙ Engineering</button>
+        <button class="ptab" id="ctabData" onclick="switchCertTab('data')">◈ Data Analytics</button>
       </div>
+
+      <!-- Engineering Certs (top 3) -->
+      <div class="cert-panel" id="certPanelEng">
+        <div class="certs-preview-row">
+
+          <!-- ✏️ Cert Engineering 1 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">CAD</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 1</h3>
+              <p>✏️ Deskripsi singkat sertifikat ini.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Cert Engineering 2 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 2</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+          <!-- ✏️ Cert Engineering 3 -->
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo eng-cert-logo">✏️</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>✏️ Nama Sertifikat Engineering 3</h3>
+              <p>✏️ Deskripsi singkat.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="see-all-wrap">
+          <a href="certificates.html#engineering" class="see-all-btn">See all engineering certificates →</a>
+        </div>
+      </div>
+
+      <!-- Data Analytics Certs (top 3) -->
+      <div class="cert-panel hidden" id="certPanelData">
+        <div class="certs-preview-row">
+
+          <div class="cert-card in-prog">
+            <div class="cert-left">
+              <div class="cert-logo revou-logo">RevoU</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status">In Progress · 2025</span>
+              <h3>Full Stack Data Analytics</h3>
+              <p>SQL, Python, Power BI, data storytelling, and real-world analytics projects.</p>
+            </div>
+          </div>
+
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo google-logo">G</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2025</span>
+              <h3>Google Data Analytics</h3>
+              <p>Professional Certificate via Coursera.</p>
+            </div>
+          </div>
+
+          <div class="cert-card upcoming">
+            <div class="cert-left">
+              <div class="cert-logo sql-logo">SQL</div>
+            </div>
+            <div class="cert-right">
+              <span class="cert-status planned">Planned · 2026</span>
+              <h3>SQL Certification</h3>
+              <p>Advanced SQL for data analysis.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="see-all-wrap">
+          <a href="certificates.html#data-analytics" class="see-all-btn">See all data analytics certificates →</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ─── CONTACT ───────────────────────────────── -->
   <section id="contact" class="alt-bg">
-    <div class="container contact-wrap">
-      <div class="contact-left">
-        <p class="section-eyebrow">Contact</p>
-        <h2 class="section-title">Let's work<br><em>together.</em></h2>
-        <p class="body-text">Open to Design Engineering roles and Data Analyst positions — or any conversation where manufacturing and data meet.</p>
-        <div class="contact-links">
-          <!-- ✏️ GANTI href dengan link profil asli kamu -->
-          <a href="https://linkedin.com/in/GANTI-INI" target="_blank" class="clink">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/GANTI-INI" target="_blank" class="clink">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            GitHub
-          </a>
-          <!-- ✏️ Ganti email -->
-          <a href="mailto:EMAIL-KAMU@gmail.com" class="clink">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Email
-          </a>
-          <!-- ✏️ Ganti nomor WA (format: 62XXXXXXXXXX) -->
-          <a href="https://wa.me/62XXXXXXXXXX" target="_blank" class="clink">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp
-          </a>
-        </div>
+    <div class="container contact-wrap-solo">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Let's work<br><em>together.</em></h2>
+      <p class="body-text">Open to Design Engineering roles and Data Analyst positions — or any conversation where manufacturing and data meet.</p>
+      <div class="contact-links">
+        <!-- ✏️ GANTI href dengan link profil asli kamu -->
+        <a href="https://www.linkedin.com/in/gomgom-sianturi-8a5a501a8" target="_blank" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <!-- ✏️ Ganti email -->
+        <a href="mailto:gomgomtoeri@gmail.com" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <!-- ✏️ Ganti nomor WA (format: 62XXXXXXXXXX) -->
+        <a href="https://wa.me/6281311584919" target="_blank" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
       </div>
-      <form class="contact-form" onsubmit="handleForm(event)">
-        <div class="form-row">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Email address" required />
-        </div>
-        <input type="text" placeholder="Subject" required />
-        <textarea rows="5" placeholder="What's on your mind?" required></textarea>
-        <button type="submit" class="cta-main full-w">Send Message</button>
-      </form>
     </div>
   </section>
 
   <footer>
     <div class="container footer-inner">
       <span class="nav-logo">GS<span class="dot">.</span></span>
-      <span class="mono footer-copy">© 2025 Gomgom Sianturi — Indonesia</span>
+      <span class="mono footer-copy">© 2026 Gomgom Sianturi — Bogor,Indonesia</span>
     </div>
   </footer>
 
