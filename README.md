@@ -1,3 +1,3 @@
-link portfolio dibawah 🙏🏼
+# 🌐 Live Portfolio
 
 https://gomgom77s.github.io/Gomgom-Portfolio/
