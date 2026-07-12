@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Analytics Projects — Gomgom Sianturi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">GS<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="engineering.html">Engineering</a>
+      <a href="analytics.html" class="active-link">Analytics</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="engineering.html" onclick="closeMobile()">Engineering</a>
+      <a href="analytics.html" onclick="closeMobile()">Analytics</a>
+      <a href="certificates.html" onclick="closeMobile()">Certificates</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-hero alt-bg data-page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <p class="section-eyebrow">All Data Analytics Projects</p>
+      <h1 class="page-hero-title">Data &<br><em class="data-em">Analytics</em></h1>
+      <p class="page-hero-sub">
+        <!-- ✏️ Edit kalimat pengantar halaman analytics -->
+        From raw query to actionable insight — structured thinking with data.
+      </p>
+    </div>
+  </div>
+
+  <section class="all-projects-section">
+    <div class="container">
+      <div class="projects-row">
+
+        <!-- ✏️ PROJECT DATA 1 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <!-- 🖼️ Ganti dengan: <img src="assets/data1.jpg" alt="Dashboard"> -->
+            <span><img src="images/portfolio-analytics-1.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Tableau</span></div>
+            <h3>Delivery Performance Analysis and Improvement Opportunities</h3>
+            <p>Analyze delivery performance to identify the key drivers of late deliveries and evaluate improvement opportunities through data-driven simulation.</p>
+            <div class="pcard-tools"><span>Excel</span><span>Tableau</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data1')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 2 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span><img src="images/portfolio-analytics-2.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Python</span><span class="tag data-tag">Pandas</span></div>
+            <h3>Customer Segmentation & Revenue Growth Strategy Using RFM Analysis</h3>
+              <p>Segment customers based on transaction behaviour to identify opportunities for increasing revenue and customer engagement.</p>
+            <div class="pcard-tools"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Numpy</span><span>Spreadsheet</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data2')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 3 -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span><img src="images/portfolio-analytics-3.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">SQL</span></div>
+              <h3>Sales Performance Analysis Using SQL</h3>
+              <p>Analyzed customer purchasing behaviour, identify high-value customers, evaluate repeat purchase patterns, and determine which product categories contribute the most to overall revenue.</p>
+            <div class="pcard-tools"><span>SQL</span><span>Spreadsheet</span><span>Power BI</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data3')">Case Study →</button>
+          </div>
+        </article>
+
+        <!-- ✏️ PROJECT DATA 4  -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span><img src="images/portfolio-analytics-4.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Tableau</span></div>
+            <h3>Hospital Operational Monitoring Dashboard</h3>
+            <p>Develop an operational dashboard to monitor hospital performance across branches and departments, focusing on patient admissions, length of stay, revenue, and workload distribution to support data-driven decision making.</p>
+            <div class="pcard-tools"><span>Excel</span><span>Tableau</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data4')">Case Study →</button>
+          </div>
+        </article>
+
+                <!-- ✏️ PROJECT DATA 5  -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span><img src="images/portfolio-analytics-5.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Spreadsheet</span></div>
+            <h3>E-Commerce Campaign Performance Analysis</h3>
+            <p>Analyze campaign performance across 10.10, 11.11, and 12.12 promotions to identify the most effective campaign, top-performing product categories, and discount efficiency drivers.</p>
+            <div class="pcard-tools"><span>Spreadsheet</span><span>Power BI</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data5')">Case Study →</button>
+          </div>
+        </article>
+
+         <!-- ✏️ PROJECT DATA 6  -->
+        <article class="pcard">
+          <div class="pcard-img ph-data">
+            <span><img src="images/portfolio-analytics-6.JPG" alt=""></span>
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-tags"><span class="tag data-tag">Excel</span></div>
+            <h3>Diesshop Production Monitoring Dashboard</h3>
+            <p>Monitor weekly production activities, machine utilization, and operator workload across New Dies, Repair Dies, and Non-Dies.</p>
+            <div class="pcard-tools"><span>Excel</span></div>
+            <button class="pcard-cta data-cta" onclick="openModal('data6')">Case Study →</button>
+          </div>
+        </article>
+        <!-- ✏️ Tambah terus -->
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">GS<span class="dot">.</span></span>
+      <span class="mono footer-copy">© 2026 Gomgom Sianturi</span>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
