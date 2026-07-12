@@ -228,8 +228,8 @@ const MODALS = {
       { value: 42.7, prefix: '', suffix: '%', label: 'SLA Compliance Rate' },
       { value: 0.57, prefix: '', suffix: 'day', label: 'Average Delivery delay' },
     ],
-    recommendation: 'Revise First Class and Second Class delivery commitments. Monitor Late Delivery Rate and SLA Compliance regularly.',
-    deckUrl: '#', // ✏️ Ganti dengan link Google Slides / PDF deck
+    recommendation: 'Revise First Class and Second Class delivery commitments - Monitor Late Delivery Rate and SLA Compliance regularly.',
+    deckUrl: 'https://docs.google.com/presentation/d/1918zIP_CQh2SVXQwCTgKVPRpevi-QPE7kEI0rBZGGVk/edit?usp=drive_link', // ✏️ Ganti dengan link Google Slides / PDF deck
   },
   data2: {
     type: 'Data Analytics', color: 'var(--data)',
@@ -244,8 +244,8 @@ const MODALS = {
       { value: 456.06, prefix: 'Rp.', suffix: 'bn', label: 'Total Transaction' },
       { value: 0.24, prefix: '', suffix: '', label: 'Average Debt-to-Ratio' },
     ],
-    recommendation: 'Retain Champions through loyalty and rewards programs. Convert Potential Loyalists into Champions and reactivate Hibernating customers through targeted campaigns.',
-    deckUrl: '#',
+    recommendation: 'Retain Champions through loyalty and rewards programs - Convert Potential Loyalists into Champions and reactivate Hibernating customers through targeted campaigns.',
+    deckUrl: 'https://docs.google.com/presentation/d/1YU2EYgZZsv_twfbR-IgPuIs9G59bkEWnFM_6-Wm6QKc/edit?usp=drive_link',
   },
   data3: {
     type: 'Data Analytics', color: 'var(--data)',
@@ -260,8 +260,8 @@ const MODALS = {
       { value: 15.717, prefix: '', suffix: 'K', label: 'Total Customer' },
       { value: 97.6, prefix: '', suffix: '%', label: 'Repeat Purchase Rate' },
     ],
-    recommendation: 'Invest in high-performing categories. Strengthen retention strategies for valuable customers. Monitor customer segments to support personalized campaigns.',
-    deckUrl: '#',
+    recommendation: 'Invest in high-performing categories. Strengthen retention strategies for valuable customers - Monitor customer segments to support personalized campaigns.',
+    deckUrl: 'https://docs.google.com/presentation/d/1bzfAdcAytA28UELsA0hQKdU9beHtkMlQsv03n3t9aVg/edit?usp=drive_link',
   },
   // ✏️ Tambah modal untuk project data baru (data4, dst)
   data4: {
@@ -277,8 +277,8 @@ const MODALS = {
       { value: 4.5, prefix: '', suffix: ' days', label: 'Average Length of Stay' },
       { value: 98.87, prefix: 'Rp ', suffix: 'B', label: 'Total Revenue' },
     ],
-    recommendation: 'Optimize resources in busy branches. Monitor high-LOS departments',
-    deckUrl: '#',
+    recommendation: 'Optimize resources in busy branches - Monitor high-LOS departments',
+    deckUrl: 'https://docs.google.com/presentation/d/1dpqZSY-sDrra_GLHRqmuznduNcrwMsy0jv1twIRMs18/edit?usp=drive_link',
   },
 
     data5: {
@@ -294,7 +294,24 @@ const MODALS = {
       { value: 10.098, prefix: '', suffix: 'K', label: 'Total Transaction' },
       { value: 13, prefix: '', suffix: 'K', label: 'Total Quantity' },
     ],
-    recommendation: 'Prioritize Mens Fashion in future promotional campaigns. Optimize discount allocation toward high-performing categories. Improve monetization strategies for high-volume categories such as Superstore.',
+    recommendation: 'Prioritize Mens Fashion in future promotional campaigns. Optimize discount allocation toward high-performing categories - Improve monetization strategies for high-volume categories such as Superstore.',
+    deckUrl: 'https://docs.google.com/presentation/d/16-FPB8esfL2V874bO87eiOSicbq7mivneWkD5yEBhro/edit?usp=drive_link',
+  },
+
+  data6: {
+    type: 'Data Analytics', color: 'var(--data)',
+    title: 'Dieshop Production Monitoring Dashboard',
+    tools: ['Excel'],
+    hero: { img: 'images/portfolio-analytics-6a.JPG', caption: '✏️ Caption hero dashboard' },
+    workflow: ['Data Collection', 'Data Cleaning', 'Table Join(3 different template table)', 'Analyzing problem', 'Dashboard Visualization'],
+    sql: { img: 'images/portfolio-analytics-6b.JPG', caption: 'Raw data from Operator Progress Form' },
+    python: { img: 'images/portfolio-analytics-6c.JPG', caption: 'Calculating Machine and Operator Hours work' },
+    kpis: [
+      { value: 14, prefix: '', suffix: 'Jobs', label: 'Total Jobs' },
+      { value: 100.2, prefix: '', suffix: 'Jam', label: 'Total Hours' },
+      { value: 13, prefix: '', suffix: 'Jam', label: 'Avg. Daily Hours' },
+    ],
+    recommendation: 'Standardize production data across New Dies, Repair Dies, and Non-Dies using Power Query to eliminate manual data consolidation and improve reporting efficiency.',
     deckUrl: '#',
   },
 };
