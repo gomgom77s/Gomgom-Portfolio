@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Projects — Gomgom Sianturi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">GS<span class="dot">.</span></a>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="engineering.html" class="active-link">Engineering</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☾</span>
+      </button>
+      <button class="burger" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobile()">Home</a>
+      <a href="index.html#about" onclick="closeMobile()">About</a>
+      <a href="engineering.html" onclick="closeMobile()">Engineering</a>
+      <a href="analytics.html" onclick="closeMobile()">Analytics</a>
+      <a href="certificates.html" onclick="closeMobile()">Certificates</a>
+      <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero alt-bg">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+      <p class="section-eyebrow">All Engineering Projects</p>
+      <h1 class="page-hero-title">Design &<br><em>Engineering</em></h1>
+      <p class="page-hero-sub">Dies, tooling, and manufacturing — every project built to tolerance.</p>
+    </div>
+  </div>
+
+  <!-- CATEGORY PICKER -->
+  <section class="eng-category-section">
+    <div class="container">
+      <p class="section-eyebrow" style="text-align:center;margin-bottom:2rem">Select a category to explore</p>
+      <div class="eng-cat-ring">
+
+        <div class="cat-circle" data-cat="dies" onclick="selectCategory('dies')">
+          <div class="cat-circle-inner">
+            <span class="cat-icon">⬡</span>
+            <span class="cat-name">Dies</span>
+            <span class="cat-count">20+ projects</span>
+          </div>
+          <div class="cat-preview">
+            <p class="cat-preview-title">Dies Design</p>
+            <p class="cat-preview-sub">Select sub-category:</p>
+            <div class="cat-sub-btns">
+              <button onclick="event.stopPropagation(); selectSubCat('dies','extrusion')">Extrusion</button>
+              <button onclick="event.stopPropagation(); selectSubCat('dies','stamping')">Stamping</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-circle" data-cat="furniture" onclick="selectCategory('furniture')">
+          <div class="cat-circle-inner">
+            <span class="cat-icon">◻</span>
+            <span class="cat-name">Furniture</span>
+            <span class="cat-count">Projects</span>
+          </div>
+          <div class="cat-preview">
+            <p class="cat-preview-title">Furniture Design</p>
+            <ul class="cat-preview-list">
+              <!-- ✏️ Edit list preview -->
+              <li>✏️ Project Furniture 1</li>
+              <li>✏️ Project Furniture 2</li>
+              <li>✏️ Project Furniture 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cat-circle" data-cat="tooling" onclick="selectCategory('tooling')">
+          <div class="cat-circle-inner">
+            <span class="cat-icon">⚙</span>
+            <span class="cat-name">Industrial<br>Tooling</span>
+            <span class="cat-count">25+ projects</span>
+          </div>
+          <div class="cat-preview">
+            <p class="cat-preview-title">Industrial Tooling</p>
+            <ul class="cat-preview-list">
+              <!-- ✏️ Edit list preview -->
+              <li>✏️ Tool Project 1</li>
+              <li>✏️ Tool Project 2</li>
+              <li>✏️ Tool Project 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cat-circle" data-cat="naval" onclick="selectCategory('naval')">
+          <div class="cat-circle-inner">
+            <span class="cat-icon">⚓</span>
+            <span class="cat-name">Naval<br>Project</span>
+            <span class="cat-count">Campus projects</span>
+          </div>
+          <div class="cat-preview">
+            <p class="cat-preview-title">Naval Project</p>
+            <ul class="cat-preview-list">
+              <!-- ✏️ Edit list preview -->
+              <li>✏️ Naval Project 1</li>
+              <li>✏️ Naval Project 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cat-circle" data-cat="showcase" onclick="selectCategory('showcase')">
+          <div class="cat-circle-inner">
+            <span class="cat-icon">✦</span>
+            <span class="cat-name">Showcase</span>
+            <span class="cat-count">Random objects</span>
+          </div>
+          <div class="cat-preview">
+            <p class="cat-preview-title">Showcase</p>
+            <ul class="cat-preview-list">
+              <!-- ✏️ Edit list preview -->
+              <li>Pipe Clamp Rack</li>
+              <li>Industrial Robot</li>
+              <li>✏️ Showcase lainnya</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 1 Google Drive link — hanya di halaman engineering -->
+      <div class="gdrive-wrap">
+        <!-- ✏️ Ganti href dengan link Google Drive folder utama kamu -->
+        <a href="#" target="_blank" class="gdrive-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.28 3L1 12.24l3.3 5.76H9.6L6.3 12.24 11.58 3zm5.14 0l5.28 9.24-3.3 5.76h-5.3l3.3-5.76zm5.44 6.22L22 18H11.44l-2.64-4.6z"/></svg>
+          View Complete Portfolio on Google Drive ↗
+        </a>
+        <p class="gdrive-note">Projects shown with employer's permission. Confidential details omitted.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECT PANELS (shown after category selected) -->
+  <section class="eng-projects-section" id="engProjectsSection" style="display:none">
+    <div class="container">
+
+      <div class="subcat-bar hidden" id="subcatBar">
+        <button class="subcat-btn active" id="subcatExtrusion" onclick="filterSubCat('extrusion')">Extrusion</button>
+        <button class="subcat-btn" id="subcatStamping" onclick="filterSubCat('stamping')">Stamping</button>
+      </div>
+
+      <div class="eng-breadcrumb">
+        <span onclick="resetCategory()" style="cursor:pointer;color:var(--muted)">All Categories</span>
+        <span style="color:var(--muted)"> › </span>
+        <span id="breadcrumbCat" style="color:var(--eng)"></span>
+        <span id="breadcrumbSub" style="color:var(--muted)"></span>
+      </div>
+
+      <div class="projects-row" id="engProjectsGrid"></div>
+
+      <div class="back-to-cat-wrap">
+        <button class="see-all-btn" onclick="resetCategory()">← Back to Categories</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">GS<span class="dot">.</span></span>
+      <span class="mono footer-copy">© 2026 Gomgom Sianturi</span>
+    </div>
+  </footer>
+
+  <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box modal-eng" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
