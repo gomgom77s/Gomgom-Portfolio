@@ -598,7 +598,7 @@ button { font-family: var(--font-body); cursor: pointer; }
 }
 
 .pcard-img {
-  height: 180px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -607,6 +607,7 @@ button { font-family: var(--font-body); cursor: pointer; }
   border-radius: 0;
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
 }
 /* When real image is added */
 .pcard-img img {
@@ -640,7 +641,35 @@ button { font-family: var(--font-body); cursor: pointer; }
 
 .pcard-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
-.tag {
+.pcard-location {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pcard-body h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  /* fixed min-height so short titles dont make card body jump */
+  min-height: 2.7rem;
+}
+
+.pcard-body p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+  /* clamp description to 3 lines so all cards same height */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
   font-family: var(--font-mono);
   font-size: 0.65rem;
   padding: 0.18rem 0.5rem;
@@ -1077,9 +1106,11 @@ footer {
 .cs-figure img {
   width: 100%;
   display: block;
+  min-height: 280px;
+  object-fit: cover;
 }
 .cs-figure-ph {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1857,6 +1888,7 @@ footer {
 .mfg-flow {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 0.5rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
@@ -2109,7 +2141,7 @@ footer {
 /* Engineering Tools */
 .pcard-tools span[data-tool="CATIA"]       { background: rgba(0,88,163,0.15);   border-color: rgba(0,88,163,0.35);   color: #0058A3; }
 .pcard-tools span[data-tool="SolidWorks"]  { background: rgba(220,30,30,0.15);  border-color: rgba(220,30,30,0.35);  color: #DC1E1E; }
-.pcard-tools span[data-tool="AutoCAD"]     { background: rgba(226,30,34,0.15);  border-color: rgba(226,30,34,0.35);  color: #E21E22; }
+.pcard-tools span[data-tool="AutoCAD"]     { background: rgba(226,30,34,0.15);  border-color: rgba(226,30,34,0.35);  color: #e66163; }
 .pcard-tools span[data-tool="Inventor"]    { background: rgba(240,130,0,0.15);  border-color: rgba(240,130,0,0.35);  color: #F08200; }
 .pcard-tools span[data-tool="ANSYS"]       { background: rgba(255,179,0,0.15);  border-color: rgba(255,179,0,0.35);  color: #FFB300; }
 
