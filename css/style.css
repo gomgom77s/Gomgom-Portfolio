@@ -2376,3 +2376,11 @@ footer {
   text-align: justify;
   text-align-last: center;
 }
+
+/* ════════ EDUCATION TIMELINE ════════ */
+.edu-dot { background: #7C3AED; }
+.tl-badge.edu-badge {
+  background: rgba(124,58,237,0.12);
+  color: #7C3AED;
+  border: 1px solid rgba(124,58,237,0.25);
+}
