@@ -302,7 +302,7 @@ const MODALS = {
     python: { img: 'images/portfolio-analytics-7c.jpg', caption: 'Business Performance Summary: Validated funnel and contract metrics were consolidated into a structured monthly performance summary' },
     kpis: [
       { value: 1853, prefix: '', suffix: ' Leads', label: 'Total Leads' },
-      { value: 2.05, prefix: 'Rp.', suffix: ' B, label: 'Total Revenue' },
+      { value: 2.05, prefix: 'Rp.', suffix: ' B', label: 'Total Revenue' },
       { value: 26.8, prefix: '', suffix: ' %', label: 'Funnel Conversion' },
     ],
     recommendation: 'Improve pricing communication by clearly communicating package value and pricing to address price-fit concerns. - Strengthen early lead qualification to better identify customer needs and interest before Sales follow-up. - Implement structured follow-up and re-engagement to improve response rates, particularly among Technology small-business leads.',
@@ -329,7 +329,7 @@ const MODALS = {
     python: { img: 'images/portfolio-analytics-8c.jpg', caption: 'Key borrower and loan characteristics identified to compare cohort profiles and assess potential drivers of differences in repayment performance' },
     kpis: [
       { value: 176087, prefix: '', suffix: ' Loans', label: 'Total Loans' },
-      { value: 2.801, prefix: '$.', suffix: ' B, label: 'Outstanding Amount' },
+      { value: 2.801, prefix: '$.', suffix: ' B', label: 'Outstanding Amount' },
       { value: 98.11, prefix: '', suffix: ' %', label: 'TKB30' },
     ],
     recommendation: 'Improve pricing communication by clearly communicating package value and pricing to address price-fit concerns. - Strengthen early lead qualification to better identify customer needs and interest before Sales follow-up. - Implement structured follow-up and re-engagement to improve response rates, particularly among Technology small-business leads.',
